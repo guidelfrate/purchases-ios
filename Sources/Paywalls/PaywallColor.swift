@@ -55,7 +55,7 @@ extension PaywallColor {
     #if canImport(SwiftUI)
 
     /// Creates a color from a Hex string: `#RRGGBB` or `#RRGGBBAA`.
-    public init(stringRepresentation: String) throws {
+    /*public init(stringRepresentation: String) throws {
         if #available(iOS 13.0, tvOS 13.0, macOS 10.15, watchOS 6.2, *) {
             self.init(stringRepresentation: stringRepresentation, color: try Self.parseColor(stringRepresentation))
         } else {
@@ -63,7 +63,7 @@ extension PaywallColor {
             // accessible through `underlyingColor`.
             self.init(stringRepresentation: stringRepresentation, underlyingColor: nil)
         }
-    }
+    }*/
 
         #if canImport(UIKit)
 
